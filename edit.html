@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="module">
+        import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
+    </script>
+    <link rel="stylesheet" href="mycss.css">
+</head>
+<body>
+<h1>Editing message</h1>
+
+<turbo-frame id="message_1">
+    <form action="/messages/1">
+        <input name="message[name]" type="text" value="My message title">
+        <textarea name="message[name]">My message content</textarea>
+        <input type="submit">
+    </form>
+    <a href="index.html">Back</a>
+</turbo-frame>
+</body>
+</html>
